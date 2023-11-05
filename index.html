@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilizar Rifas</title>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="script/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img src="/assets/logo sem nome.png" alt="Logo Loja Famest">
+        <h1>Loja Famest</h1>
+        <p>Acesse as rifas já compradas ou adicione mais rifas:</p>
+    </header>
+    <main>
+        <section rifas-container class="rifas-container"></section>
+        <section editar-rifas class="editar-rifas">
+            <p>Edite as Rifas:</p>
+            <div class="grupo-botoes">
+                <button remover-bt class="editar-bt">Remover</button>
+                <button editar-bt class="editar-bt">Editar</button>
+                <button adicionar-bt class="editar-bt">Adicionar</button>
+            </div>
+            <form adicionar-dados action="." method="post" class="editar-dados-form hidden">
+                <label for="nome" class="input-dados">Nome:</label>
+                <input type="text" name="nome" id="nome-rifa">
+                <label for="numero" class="input-dados">Número:</label>
+                <input type="number" name="numero" id="numero-rifa">
+                <label for="pagamento" class="input-dados">Pagamento:</label>
+                <input type="text" name="pagamento" id="pagamento-rifa">
+                <input concluir-adicionar-bt type="submit" name="submit" value="Concluir" class="editar-bt concluir-bt">
+            </form>
+            <form editar-dados action="." method="put" class="editar-dados-form hidden">
+                <label for="numero-editar" class="input-dados">Editar a rifa de qual número?</label>
+                <input type="number" name="numero-editar" id="numero-editar-rifa">
+                <label for="novo-nome" class="input-dados">Novo nome:</label>
+                <input type="text" name="novo-nome" id="novo-nome-rifa">
+                <label for="novo-numero" class="input-dados">Novo número:</label>
+                <input type="number" name="novo-numero" id="novo-numero-rifa">
+                <label for="novo-pagamento" class="input-dados">Pagamento:</label>
+                <input type="text" name="novo-pagamento" id="novo-pagamento-rifa">
+                <input concluir-editar-bt type="submit" name="submit" value="Concluir" class="editar-bt concluir-bt">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

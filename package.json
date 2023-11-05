@@ -1,0 +1,11 @@
+{
+  "name": "contabilizarrifas",
+  "version": "1.0.0",
+  "description": "project to save data in a database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cadu",
+  "license": "ISC"
+}
