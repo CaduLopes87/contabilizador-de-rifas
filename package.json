@@ -1,8 +1,8 @@
 {
-  "name": "contabilizarrifas",
+  "name": "contabilizar-rifas",
   "version": "1.0.0",
-  "description": "project to save data in a database",
-  "main": "index.js",
+  "description": "project to save rifas data in a database",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
