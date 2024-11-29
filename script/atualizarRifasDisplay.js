@@ -34,8 +34,12 @@ export function atualizarRifasDisplay(){
            divRifaDados.appendChild(pPagamento);
            fragment.appendChild(divRifaDados);            
        });
-       
+
        rifasContainer.appendChild(fragment);
-    });
+    }).finally(() => {
+        document.getElementById('span-carregando').classList.add('hidden');
+        console.log('listaMontada.')
+    }
+    );
 
 }
