@@ -1,4 +1,5 @@
 import { atualizarRifasDisplay } from "./atualizarRifasDisplay.js";
+import { esconderElementosRemocao } from "./botaoRemover.js";
 import { bancoDeDadosRifas } from "./obterDadosDoServidor.js";
 
 export function excluirElemento() {
@@ -10,6 +11,7 @@ export function excluirElemento() {
 
             const idRifa = e.target.getAttribute('data-excluir-bt-id');
             await bancoDeDadosRifas.excluir(idRifa);
+            esconderElementosRemocao();
             atualizarRifasDisplay();
         })
     })
